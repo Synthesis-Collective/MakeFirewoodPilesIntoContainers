@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -28,17 +28,12 @@ namespace MakeFirewoodPilesIntoContainers
         
         public static async Task<int> Main(string[] args)
         {
-            return await SynthesisPipeline.Instance.AddPatch<ISkyrimMod, ISkyrimModGetter>(RunPatch).Run(args,
-                new RunPreferences
-                {
-                    ActionsForEmptyArgs = new RunDefaultPatcher
-                    {
-                        IdentifyingModKey = "WiZkiD Lootable FireWood Piles_patch.esp",
-                        TargetRelease = GameRelease.SkyrimSE,
-                    }
-                });
-
+            return await SynthesisPipeline.Instance
+                .SetTypicalOpen(GameRelease.SkyrimSE, "WiZkiD Lootable FireWood Piles_patch.esp")
+                .AddPatch<ISkyrimMod, ISkyrimModGetter>(RunPatch)
+                .Run(args);
         }
+
         private static void RunPatch(IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
         {
             foreach (var placed in state.LoadOrder.PriorityOrder.PlacedObject().WinningContextOverrides(state.LinkCache))
