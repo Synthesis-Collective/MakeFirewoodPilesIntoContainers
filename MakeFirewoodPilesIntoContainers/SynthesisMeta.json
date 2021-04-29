@@ -1,0 +1,10 @@
+{
+  "Nickname": "MakeFirewoodPilesIntoContainers",
+  "Visibility": "Exclude",
+  "OneLineDescription": "Synthesis version of WiZkiD's Lootable FireWood Piles patcher",
+  "LongDescription": "",
+  "PreferredAutoVersioning": "Default",
+  "RequiredMods": [
+    "WiZkiD Lootable FireWood Piles.esp"
+  ]
+}
