@@ -14,16 +14,16 @@ namespace MakeFirewoodPilesIntoContainers
     {
         private static readonly Dictionary<IFormLinkGetter<ISkyrimMajorRecordGetter>, IFormLink<IContainerGetter>> _replacements = new()
         {
-            {FirewoodPileSmall01, wiz_FireWoodpileSmall},
-            {FirewoodPileLarge01, wiz_FireWoodpileLarge},
-            {FirewoodPileHuge1, wiz_FireWoodPileHuge},
-            {FirewoodPileHuge1_LightSN, wiz_FireWoodpileLarge_LightSN},
-            {FirewoodPileSmall01_SparseSN, wiz_FireWoodpileSmall_SparseSN},
-            {FirewoodPileLarge01_SparseSN, wiz_FireWoodpileLarge_SparseSN},
-            {FirewoodPileMedium01_LightSN, wiz_FireWoodpileMedium_LightSN},
-            {FirewoodPileLarge01_LightSN, wiz_FireWoodpileLarge_LightSN},
-            {FirewoodPileSmall01_LightSN, wiz_FireWoodpileSmall_LightSN},
-            {FirewoodPileMedium01, wiz_FireWoodpileMedium},
+            {FirewoodPileSmall01, wiz_FireWoodpileSmall01},
+            {FirewoodPileLarge01, wiz_FireWoodpileLarge01},
+            {FirewoodPileHuge1, wiz_FireWoodPileHuge1},
+            {FirewoodPileHuge1_LightSN, wiz_FireWoodPileHuge1_LightSN},
+            {FirewoodPileSmall01_SparseSN, wiz_FireWoodpileSmall01_SparseSN},
+            {FirewoodPileLarge01_SparseSN, wiz_FireWoodpileLarge01_SparseSN},
+            {FirewoodPileMedium01_LightSN, wiz_FireWoodpileMedium01_LightSN},
+            {FirewoodPileLarge01_LightSN, wiz_FireWoodpileLarge01_LightSN},
+            {FirewoodPileSmall01_LightSN, wiz_FireWoodpileSmall01_LightSN},
+            {FirewoodPileMedium01, wiz_FireWoodpileMedium01},
         };
         
         public static async Task<int> Main(string[] args)
