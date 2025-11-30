@@ -9,16 +9,16 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Container
         {
             private static FormLink<IContainerGetter> Construct(uint id) => new(ModKey.MakeFormKey(id));
-            public static FormLink<IContainerGetter> wiz_FireWoodpileSmall => Construct(0x3209f2);
-            public static FormLink<IContainerGetter> wiz_FireWoodpileLarge => Construct(0x3209f3);
-            public static FormLink<IContainerGetter> wiz_FireWoodPileHuge => Construct(0x3534af);
-            public static FormLink<IContainerGetter> wiz_FireWoodPileHuge_LightSN => Construct(0x3534b1);
-            public static FormLink<IContainerGetter> wiz_FireWoodpileSmall_SparseSN => Construct(0x3534b2);
-            public static FormLink<IContainerGetter> wiz_FireWoodpileLarge_SparseSN => Construct(0x3534b3);
-            public static FormLink<IContainerGetter> wiz_FireWoodpileMedium_LightSN => Construct(0x3534b4);
-            public static FormLink<IContainerGetter> wiz_FireWoodpileLarge_LightSN => Construct(0x3534b6);
-            public static FormLink<IContainerGetter> wiz_FireWoodpileSmall_LightSN => Construct(0x3534b7);
-            public static FormLink<IContainerGetter> wiz_FireWoodpileMedium => Construct(0x3534b8);
+            public static FormLink<IContainerGetter> wiz_FireWoodpileSmall01 => Construct(0x3209f2);
+            public static FormLink<IContainerGetter> wiz_FireWoodpileLarge01 => Construct(0x3209f3);
+            public static FormLink<IContainerGetter> wiz_FireWoodPileHuge1 => Construct(0x3534af);
+            public static FormLink<IContainerGetter> wiz_FireWoodPileHuge1_LightSN => Construct(0x3534b1);
+            public static FormLink<IContainerGetter> wiz_FireWoodpileSmall01_SparseSN => Construct(0x3534b2);
+            public static FormLink<IContainerGetter> wiz_FireWoodpileLarge01_SparseSN => Construct(0x3534b3);
+            public static FormLink<IContainerGetter> wiz_FireWoodpileMedium01_LightSN => Construct(0x3534b4);
+            public static FormLink<IContainerGetter> wiz_FireWoodpileLarge01_LightSN => Construct(0x3534b6);
+            public static FormLink<IContainerGetter> wiz_FireWoodpileSmall01_LightSN => Construct(0x3534b7);
+            public static FormLink<IContainerGetter> wiz_FireWoodpileMedium01 => Construct(0x3534b8);
         }
     }
 }
